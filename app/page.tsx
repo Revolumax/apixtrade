@@ -70,7 +70,7 @@ export default function Home() {
 
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     const fontSize = 16;
-    let columns = Math.floor(canvas.width / fontSize);
+    const columns = Math.floor(canvas.width / fontSize);
     const drops = Array(columns).fill(1);
 
     const draw = () => {

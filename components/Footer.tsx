@@ -1,3 +1,5 @@
+import { Link } from "lucide-react";
+
 export default function Footer() {
   return <>
      <footer className="min-h-screen bg-black text-white flex items-center justify-between px-10 py-20 relative">
@@ -37,10 +39,10 @@ export default function Footer() {
             HOME
           </a>
           <a
-            href="/"
+            href="#"
             className="border-b border-gray-700 pb-4 hover:text-green-400"
           >
-            AI
+            IA
           </a>
           <a
             href="#"

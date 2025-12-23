@@ -465,7 +465,7 @@ export default function Trade() {
 
       <p className="text-sm md:text-base opacity-80 leading-relaxed max-w-md mx-auto">
         A decade of historical testing ensures superior reliability. From 2015
-        to the present, we've observed strong trending cycles and extended
+        to the present, we have observed strong trending cycles and extended
         sideways periods, and Apix Trade has weathered each market phase with
         remarkably little drawdown.
       </p>
