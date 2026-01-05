@@ -31,7 +31,7 @@ const miFuente = localFont({
 export default function Pricing() {
   return (
     <>
-      <section className="relative w-full min-h-[420px] flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative w-full min-h-[420px] flex items-center justify-center overflow-hidden bg-black z-0">
         {/* Fondo degradado */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-green-950/40" />
 

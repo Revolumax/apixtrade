@@ -109,7 +109,7 @@ export default function Trade() {
         width={700}
       />
 
-      <section className="relative w-full h-screen min-h-[600px] flex items-center justify-end bg-[#070607] overflow-hidden">
+      <section className="relative w-full h-screen min-h-[600px] flex items-center justify-end bg-[#070607] overflow-hidden ">
         {/* Cuadrícula sutil (grid de líneas) */}
         <div
           className="absolute inset-0 opacity-10"
@@ -143,26 +143,26 @@ export default function Trade() {
         </div>
       </section>
 
-      <div
-        className="w-full bg-black py-32 flex flex-col items-center justify-center text-white mt-[5vw]"
-        id="inicioscroll"
-      >
-        {/* Círculo con número */}
-        <div className="w-20 h-20 rounded-full border border-white flex items-center justify-center font-medium text-[3vh]">
-          1
+      <section className="relative w-full min-h-screen bg-black text-white py-40">
+        <div
+          className="w-full bg-black py-32 flex flex-col items-center justify-center text-white mt-[5vw]"
+          id="inicioscroll"
+        >
+          {/* Círculo con número */}
+          <div className="w-20 h-20 rounded-full border border-white flex items-center justify-center font-medium text-[3vh]">
+            1
+          </div>
+
+          {/* Título */}
+          <h2
+            className={`${miFuente.className} text-center font-bold leading-[81px] text-[96px]`}
+          >
+            Why choose our APIX
+            <br />
+            TRADE software
+          </h2>
         </div>
 
-        {/* Título */}
-        <h2
-          className={`${miFuente.className} text-center font-bold leading-[81px] text-[96px]`}
-        >
-          Why choose our APIX
-          <br />
-          TRADE software
-        </h2>
-      </div>
-
-      <section className="relative w-full min-h-screen bg-black text-white py-40">
         {/* Línea central */}
         <div className="absolute left-1/2 top-0 h-full w-[3px] bg-neutral-800 transform -translate-x-1/2">
           <div
@@ -334,9 +334,7 @@ export default function Trade() {
         </div>
       </section>
 
-      <div
-        className="w-full bg-black py-32 flex flex-col items-center justify-center text-white mt-[5vw]"
-      >
+      <div className="w-full bg-black py-32 flex flex-col items-center justify-center text-white mt-[5vw]">
         {/* Círculo con número */}
         <div className="w-20 h-20 rounded-full border border-white flex items-center justify-center font-medium text-[3vh]">
           2
@@ -433,46 +431,47 @@ export default function Trade() {
       </div>
 
       <section className="relative w-full min-h-screen bg-black text-white flex items-center justify-center px-6">
-  <div className="relative w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-16 items-center">
+        <div className="relative w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-16 items-center">
+          {/* Card izquierda */}
+          <div className="border border-white/20 p-10 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              We offer three investment
+              <br />
+              options with varying profit
+              <br />
+              potential
+            </h2>
 
-    {/* Card izquierda */}
-    <div className="border border-white/20 p-10 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">
-        We offer three investment<br />options with varying profit<br />potential
-      </h2>
+            <p className="text-sm md:text-base opacity-80 leading-relaxed max-w-md mx-auto">
+              A conservative option with an expected return of 5%, an
+              intermediate option with a potential of up to 30%, and a
+              high-potential option that could achieve a profit of up to 50% per
+              month.
+            </p>
+          </div>
 
-      <p className="text-sm md:text-base opacity-80 leading-relaxed max-w-md mx-auto">
-        A conservative option with an expected return of 5%, an intermediate
-        option with a potential of up to 30%, and a high-potential option that
-        could achieve a profit of up to 50% per month.
-      </p>
-    </div>
+          {/* Cruz central */}
+          <div className="flex justify-center items-center">
+            <img src="/cruzverde.png" alt="Cross" className="w-30 h-30" />
+          </div>
 
-    {/* Cruz central */}
-    <div className="flex justify-center items-center">
-      <img
-        src="/cruz.png"
-        alt="Cross"
-        className="w-10 h-10"
-      />
-    </div>
+          {/* Card derecha */}
+          <div className="border border-white/20 p-10 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Proven Performance Through
+              <br />
+              Market Cycles
+            </h2>
 
-    {/* Card derecha */}
-    <div className="border border-white/20 p-10 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">
-        Proven Performance Through<br />Market Cycles
-      </h2>
-
-      <p className="text-sm md:text-base opacity-80 leading-relaxed max-w-md mx-auto">
-        A decade of historical testing ensures superior reliability. From 2015
-        to the present, we have observed strong trending cycles and extended
-        sideways periods, and Apix Trade has weathered each market phase with
-        remarkably little drawdown.
-      </p>
-    </div>
-
-  </div>
-</section>
+            <p className="text-sm md:text-base opacity-80 leading-relaxed max-w-md mx-auto">
+              A decade of historical testing ensures superior reliability. From
+              2015 to the present, we have observed strong trending cycles and
+              extended sideways periods, and Apix Trade has weathered each
+              market phase with remarkably little drawdown.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

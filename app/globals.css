@@ -216,3 +216,134 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.luz {
+  background-color: #101011;
+  transition: all 0.25s ease;
+}
+
+.luz-on {
+  background-color: #39f99f;
+  box-shadow:
+    0 0 6px #39f99f,
+    0 0 14px #39f99f,
+    0 0 28px rgba(57, 249, 159, 0.85);
+}
+
+
+.cuboluz {
+  background-color: #101011;
+  border-radius: 2px;
+}
+
+.cuboluz.on {
+  background-color: #39f99f;
+  box-shadow:
+    0 0 6px #39f99f,
+    0 0 12px #39f99f,
+    0 0 24px rgba(57, 249, 159, 0.85);
+  transition: all 0.25s ease;
+}
+
+.cuboluz.active {
+  background-color: #3affa3;
+  box-shadow:
+    0 0 6px #3affa3,
+    0 0 12px #3affa3,
+    0 0 24px #3affa3;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* TEXTO */
+
+.title-enter {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.title-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+
+.title-exit-active {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.cuboluz {
+  background: #101011;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuboluz.active {
+  background: #3affa3;
+  box-shadow:
+    0 0 6px #3affa3,
+    0 0 12px #3affa3,
+    0 0 24px #3affa3;
+}
+
+/* ENTRADA DESDE ARRIBA */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+/* ESTADO VISIBLE */
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* SALIDA HACIA ARRIBA */
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.title-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* ESTADO INICIAL DE ENTRADA */
+.title-enter {
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+/* ESTADO VISIBLE (ANIMADO) */
+.title-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+@keyframes neonPulse {
+  0% {
+    opacity: 0.4;
+    box-shadow: 0 0 4px #0affc2;
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow: 
+      0 0 8px #0affc2,
+      0 0 16px #0affc2,
+      0 0 32px #0affc2;
+  }
+
+  100% {
+    opacity: 0.4;
+    box-shadow: 0 0 4px #0affc2;
+  }
+}
+
+.neon-bar {
+  animation: neonPulse 2s ease-in-out infinite;
+}
